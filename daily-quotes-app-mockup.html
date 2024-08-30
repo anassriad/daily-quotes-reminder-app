@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Quotes Reminder App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .phone {
+            width: 300px;
+            height: 600px;
+            background-color: white;
+            border-radius: 30px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .quote-container {
+            text-align: center;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .quote {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .author {
+            font-style: italic;
+        }
+        .button {
+            background-color: #007AFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="phone">
+        <h1 style="text-align: center;">Daily Quotes</h1>
+        <div class="quote-container">
+            <p class="quote">"The only way to do great work is to love what you do."</p>
+            <p class="author">- Steve Jobs</p>
+        </div>
+        <div style="text-align: center;">
+            <button class="button">Play Quote</button>
+            <button class="button">Next Quote</button>
+        </div>
+    </div>
+</body>
+</html>
